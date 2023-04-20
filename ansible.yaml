@@ -1,7 +1,6 @@
 ---
 - name: Deploy to K8s Cluster
-  hosts: webservers 
-  become: true
+  hosts: webservers   
   tasks:
     - name: Deploy auth API
       shell: |
